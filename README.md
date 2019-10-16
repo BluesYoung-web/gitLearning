@@ -27,19 +27,18 @@
 - `git checkout -- readme.txt`可以丢弃工作区的修改
 - `git reset HEAD readme.txt`可以把暂存区的修改撤销掉（`unstage`），重新放回工作区
 ## 删除文件
-- windows：dir看当前目录文件===ls
+- `windows：dir`看当前目录文件===`liniux：ls`
 - `del LICENSE`/`rm LICENSE`删除本地文件
 - 从版本库中删除该文件，那就用命令`git rm LICENSE`然后`git commit`
 - 把误删的文件恢复到最新版本`git checkout -- LICENSE`
 ## 上传到远程仓库
 - 创建SSH Key
 `ssh-keygen -t rsa -C "youremail@exp.com"`
-一路回车，直到结束
-可以在用户主目录里找到`.ssh`目录，里面有`id_rsa`和`id_rsa.pub`两个文件
-- 登陆GitHub，打开“Account settings”，“SSH Keys”页面
-- 点“New SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容
-- 点“Add Key”，你就应该看到已经添加的Key
-- 登陆GitHub，然后，在右上角找到“Create a new repo”按钮，创建一个新的仓库——gitLearning
+一路回车，直到结束。可以在用户主目录里找到`.ssh`目录，里面有`id_rsa`和`id_rsa.pub`两个文件
+- 登陆`GitHub`，打开`“Account settings”`，`“SSH Keys”`页面
+- 点`“New SSH Key”`，填上任意`Title`，在`Key`文本框里粘贴`id_rsa.pub`文件的内容
+- 点`“Add Key”`，你就应该看到已经添加的`Key`
+- 登陆`GitHub`，然后，在右上角找到`“Create a new repo”`按钮，创建一个新的仓库——`gitLearning`
 - 关联远程仓库：
 `git remote add origin https://github.com/BluesYoung-web/gitLearning.git`
 - 将本地内容推送到远程
